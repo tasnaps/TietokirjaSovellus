@@ -1,14 +1,10 @@
 package com.example.tietokirjasovellus;
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +16,8 @@ public class ItemDetailsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
         ImageView ivPetImage = view.findViewById(R.id.ivPetImage);
         TextView tvPetName = view.findViewById(R.id.tvLemmikkiNimi);
         TextView tvPetText = view.findViewById(R.id.tvLemmikkiTeksti);

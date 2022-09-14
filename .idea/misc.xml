@@ -3,11 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/fragment_item_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/fragment_list_view.xml" value="0.33" />
         <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/fragment_pet_list.xml" value="0.2966485507246377" />
-        <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/pet_list_item.xml" value="0.67" />
+        <entry key="..\:/Users/tapio/AndroidStudioProjects/tietokirjaSovellus/app/src/main/res/layout/pet_list_item.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/vertical_navigation"
     app:startDestination="@id/listViewFragment">
-
     <fragment
         android:id="@+id/listViewFragment"
         android:name="com.example.tietokirjasovellus.listViewFragment"
         android:label="fragment_list_view"
-        tools:layout="@layout/fragment_list_view" />
-
+        tools:layout="@layout/fragment_list_view">
+    </fragment>
     <fragment
         android:id="@+id/itemDetailsFragment"
         android:name="com.example.tietokirjasovellus.ItemDetailsFragment"
         android:label="fragment_item_details"
-        tools:layout="@layout/fragment_item_details" />
-
+        tools:layout="@layout/fragment_item_details">
+    </fragment>
 </navigation>

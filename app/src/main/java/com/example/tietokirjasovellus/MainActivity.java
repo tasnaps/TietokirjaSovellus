@@ -2,7 +2,6 @@ package com.example.tietokirjasovellus;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
                 "database-name").allowMainThreadQueries().build();
 
         PetDao petDao = database.petDao();
-
-
 
         Pet[] allPets = petDao.getAllPets();
         if(allPets.length ==0) InitiatePets(petDao);
