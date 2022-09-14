@@ -1,0 +1,11 @@
+Sovelluksessa kuvia kuvia ja tietoja tapion lemmikeistä
+
+Lista näkymä
+Lemmikin Kuva - Nimi
+
+Klikkaa kuvaa -> fragmentin vaihdos tietonäkymään
+
+
+Tietonäkymä
+Kuva ja alla tiedot kyseisestä lemmikistä
+
