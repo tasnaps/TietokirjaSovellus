@@ -50,9 +50,6 @@ public class PetListAdapter extends
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.itemView.setTag(position);
         holder.itemView.setOnClickListener(PetListClickListener);
-        //todo nullpointer exception here
-       // System.out.println(holder.textView);
-
         holder.textView.setText(localDataset[position].name);
         holder.imageView.setImageResource(localDataset[position].imageId);
     }

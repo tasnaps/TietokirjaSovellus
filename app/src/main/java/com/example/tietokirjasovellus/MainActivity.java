@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        database = Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "uusikanta").allowMainThreadQueries().build();
+        database = Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "tietokanta").allowMainThreadQueries().build();
                 //Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "database-name").allowMainThreadQueries().build();
 
         PetDao petDao = database.petDao();
