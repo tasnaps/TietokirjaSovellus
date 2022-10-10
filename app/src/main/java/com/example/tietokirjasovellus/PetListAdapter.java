@@ -1,12 +1,12 @@
 package com.example.tietokirjasovellus;
 
 import android.os.Bundle;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -32,7 +32,6 @@ public class PetListAdapter extends
 
             NavController navController = Navigation.findNavController(view);
             navController.navigate(R.id.itemDetailsFragment, bundle);
-
         }
     };
 
@@ -51,6 +50,8 @@ public class PetListAdapter extends
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.itemView.setTag(position);
         holder.itemView.setOnClickListener(PetListClickListener);
+        //todo nullpointer exception here
+       // System.out.println(holder.textView);
 
         holder.textView.setText(localDataset[position].name);
         holder.imageView.setImageResource(localDataset[position].imageId);
@@ -70,7 +71,7 @@ public class PetListAdapter extends
             super(itemView);
 
             imageView = (ImageView) itemView.findViewById(R.id.ivPetIcon);
-            textView = (TextView) itemView.findViewById(R.id.tvLemmikkiNimi);
+            textView = (TextView) itemView.findViewById(R.id.tvPetName);
         }
     }
 }

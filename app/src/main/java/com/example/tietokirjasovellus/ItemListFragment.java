@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class listViewFragment extends Fragment {
+public class ItemListFragment extends Fragment {
 
-    listViewFragment(){super(R.layout.fragment_list_view);}
+    public ItemListFragment(){super(R.layout.fragment_list_view);}
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){

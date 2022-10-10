@@ -10,23 +10,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        database = Room.databaseBuilder(
-                getApplicationContext(),
-                PetDatabase.class,
-                "database-name").allowMainThreadQueries().build();
+        database = Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "tietokanta").allowMainThreadQueries().build();
+                //Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "database-name").allowMainThreadQueries().build();
 
         PetDao petDao = database.petDao();
 
         Pet[] allPets = petDao.getAllPets();
         if(allPets.length ==0) InitiatePets(petDao);
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
     private void InitiatePets(PetDao dao){
+
         Pet mustikka = new Pet();
+
         mustikka.name="Mustikka";
         mustikka.mainText="Mustikka on shetlannin paimenkoira";
         mustikka.imageId=getResources().getIdentifier("mustikka", "drawable", getPackageName());
@@ -46,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
         tupu.mainText = "Tupu on ärsyttävä kissa joka pissaa lattioille";
         tupu.imageId=getResources().getIdentifier("tupu", "drawable", getPackageName());
 
-        dao.insertAll();
+        dao.insertAll(mustikka, lillukka, lola, tupu);
     }
 }

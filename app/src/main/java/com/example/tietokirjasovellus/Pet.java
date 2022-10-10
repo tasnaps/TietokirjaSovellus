@@ -10,7 +10,7 @@ public class Pet {
     @PrimaryKey(autoGenerate = true)
     public int petId;
 
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "petName")
     public String name;
 
     @ColumnInfo(name = "image_id")

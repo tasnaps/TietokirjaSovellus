@@ -6,7 +6,7 @@
     app:startDestination="@id/listViewFragment">
     <fragment
         android:id="@+id/listViewFragment"
-        android:name="com.example.tietokirjasovellus.listViewFragment"
+        android:name="com.example.tietokirjasovellus.ItemListFragment"
         android:label="fragment_list_view"
         tools:layout="@layout/fragment_list_view">
     </fragment>

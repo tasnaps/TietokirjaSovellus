@@ -8,7 +8,7 @@ import androidx.room.Query;
 @Dao
 public interface PetDao {
 
-    @Query("SELECT * FROM pet WHERE name LIKE :name LIMIT 1")
+    @Query("SELECT * FROM pet WHERE petName LIKE :name LIMIT 1")
     Pet findByName(String name);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
