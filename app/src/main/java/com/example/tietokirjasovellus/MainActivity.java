@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        database = Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "tietokanta").allowMainThreadQueries().build();
+        database = Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "uusikanta").allowMainThreadQueries().build();
                 //Room.databaseBuilder(getApplicationContext(), PetDatabase.class, "database-name").allowMainThreadQueries().build();
 
         PetDao petDao = database.petDao();
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Pet mustikka = new Pet();
 
         mustikka.name="Mustikka";
-        mustikka.mainText="Mustikka on shetlannin paimenkoira";
+        mustikka.mainText="Mustikka on shetlannin paimenkoira. Tässä kuvassa Mustikka on pentuna. Nykyisin hän on vähän eri näköinen";
         mustikka.imageId=getResources().getIdentifier("mustikka", "drawable", getPackageName());
 
         Pet lillukka = new Pet();
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         Pet lola = new Pet();
         lola.name = "Lola";
-        lola.mainText = "Lola on kissa, joka ujostelee paljon";
+        lola.mainText = "Lola on jo vanha kissa. Hän viihtyy paljon ulkona ja tykkää metsästää hiiriä.";
         lola.imageId=getResources().getIdentifier("lola", "drawable", getPackageName());
 
         Pet tupu = new Pet();
